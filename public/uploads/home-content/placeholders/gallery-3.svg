@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title">
+  <title id="title">Gallery 3 Placeholder</title>
+  <rect width="1000" height="700" fill="#fce7f3"/>
+  <circle cx="740" cy="220" r="130" fill="#ec4899" opacity="0.55"/>
+  <rect x="140" y="230" width="520" height="250" rx="24" fill="#f472b6"/>
+  <text x="500" y="620" text-anchor="middle" font-size="56" font-family="Arial, sans-serif" fill="#9d174d">Gallery 3</text>
+</svg>

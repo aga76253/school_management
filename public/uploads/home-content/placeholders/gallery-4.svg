@@ -1,0 +1,7 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" role="img" aria-labelledby="title">
+  <title id="title">Gallery 4 Placeholder</title>
+  <rect width="1000" height="700" fill="#ede9fe"/>
+  <polygon points="140,500 340,180 540,500" fill="#8b5cf6" opacity="0.55"/>
+  <polygon points="400,500 620,220 860,500" fill="#a78bfa"/>
+  <text x="500" y="620" text-anchor="middle" font-size="56" font-family="Arial, sans-serif" fill="#5b21b6">Gallery 4</text>
+</svg>

@@ -2,6 +2,13 @@ import { Schema, model, models, type InferSchemaType } from "mongoose";
 
 const StudentSchema = new Schema(
   {
+    userId: { type: Schema.Types.ObjectId, ref: "User", unique: true, sparse: true },
+    admissionSubmissionId: {
+      type: Schema.Types.ObjectId,
+      ref: "AdmissionSubmission",
+      unique: true,
+      sparse: true,
+    },
     fullName: { type: String, required: true, trim: true },
     studentId: { type: String, required: true, unique: true, trim: true },
     dateOfBirth: { type: Date, required: true },

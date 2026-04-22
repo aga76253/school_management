@@ -1,0 +1,8 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Principal Placeholder</title>
+  <desc id="desc">Default principal portrait placeholder</desc>
+  <rect width="1200" height="900" fill="#f8fafc"/>
+  <circle cx="600" cy="340" r="190" fill="#cbd5e1"/>
+  <rect x="320" y="540" width="560" height="230" rx="115" fill="#94a3b8"/>
+  <text x="600" y="840" text-anchor="middle" font-size="64" font-family="Arial, sans-serif" fill="#334155">Principal</text>
+</svg>

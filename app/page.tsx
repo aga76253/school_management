@@ -90,7 +90,7 @@ export default async function HomePage() {
                 Admission Open 2026-27
               </Badge>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white">
-                Nurturing Minds,{" "}
+                Nurturing Mind,{" "}
                 <span className="text-blue-600 dark:text-blue-400">Building Futures</span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg">

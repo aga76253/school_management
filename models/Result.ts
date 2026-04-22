@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const ResultSchema = new Schema(
   {
@@ -21,8 +21,6 @@ const ResultSchema = new Schema(
 );
 
 ResultSchema.index({ studentId: 1, examId: 1 }, { unique: true });
-
-export type ResultDoc = InferSchemaType<typeof ResultSchema>;
 
 const Result = models.Result || model("Result", ResultSchema);
 export default Result;

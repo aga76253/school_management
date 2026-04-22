@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const FeeSchema = new Schema(
   {
@@ -14,8 +14,6 @@ const FeeSchema = new Schema(
   },
   { timestamps: true }
 );
-
-export type FeeDoc = InferSchemaType<typeof FeeSchema>;
 
 const Fee = models.Fee || model("Fee", FeeSchema);
 export default Fee;

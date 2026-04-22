@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const AdmissionNoticeSchema = new Schema(
   {
@@ -8,8 +8,6 @@ const AdmissionNoticeSchema = new Schema(
   },
   { timestamps: true }
 );
-
-export type AdmissionNoticeDoc = InferSchemaType<typeof AdmissionNoticeSchema>;
 
 const AdmissionNotice =
   models.AdmissionNotice || model("AdmissionNotice", AdmissionNoticeSchema);

@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const EnrollmentSchema = new Schema(
   {
@@ -41,8 +41,6 @@ EnrollmentSchema.index(
     partialFilterExpression: { rollNumber: { $exists: true } },
   }
 );
-
-export type EnrollmentDoc = InferSchemaType<typeof EnrollmentSchema>;
 
 const Enrollment = models.Enrollment || model("Enrollment", EnrollmentSchema);
 export default Enrollment;

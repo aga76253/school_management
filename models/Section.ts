@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const SectionSchema = new Schema(
   {
@@ -16,8 +16,6 @@ const SectionSchema = new Schema(
 );
 
 SectionSchema.index({ classId: 1, sectionCode: 1 }, { unique: true });
-
-export type SectionDoc = InferSchemaType<typeof SectionSchema>;
 
 const Section = models.Section || model("Section", SectionSchema);
 export default Section;

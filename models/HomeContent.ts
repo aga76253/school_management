@@ -1,4 +1,4 @@
-import { model, models, Schema, type InferSchemaType } from "mongoose";
+import { model, models, Schema } from "mongoose";
 
 const HomeContentSchema = new Schema(
   {
@@ -38,8 +38,6 @@ const HomeContentSchema = new Schema(
     timestamps: true,
   }
 );
-
-export type HomeContentDoc = InferSchemaType<typeof HomeContentSchema>;
 
 const HomeContent = models.HomeContent || model("HomeContent", HomeContentSchema);
 

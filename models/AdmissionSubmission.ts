@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const AdmissionSubmissionSchema = new Schema(
   {
@@ -51,10 +51,6 @@ const AdmissionSubmissionSchema = new Schema(
 );
 
 AdmissionSubmissionSchema.index({ userId: 1, sessionId: 1 }, { unique: true });
-
-export type AdmissionSubmissionDoc = InferSchemaType<
-  typeof AdmissionSubmissionSchema
->;
 
 const AdmissionSubmission =
   models.AdmissionSubmission ||

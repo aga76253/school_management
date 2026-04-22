@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const ClassSchema = new Schema(
   {
@@ -8,8 +8,6 @@ const ClassSchema = new Schema(
   },
   { timestamps: true }
 );
-
-export type ClassDoc = InferSchemaType<typeof ClassSchema>;
 
 const ClassModel = models.Class || model("Class", ClassSchema);
 export default ClassModel;

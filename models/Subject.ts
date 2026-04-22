@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const SubjectSchema = new Schema(
   {
@@ -8,8 +8,6 @@ const SubjectSchema = new Schema(
   },
   { timestamps: true }
 );
-
-export type SubjectDoc = InferSchemaType<typeof SubjectSchema>;
 
 const Subject = models.Subject || model("Subject", SubjectSchema);
 export default Subject;

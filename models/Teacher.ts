@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const TeacherSchema = new Schema(
   {
@@ -16,8 +16,6 @@ const TeacherSchema = new Schema(
   },
   { timestamps: true }
 );
-
-export type TeacherDoc = InferSchemaType<typeof TeacherSchema>;
 
 const Teacher = models.Teacher || model("Teacher", TeacherSchema);
 export default Teacher;

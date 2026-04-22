@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const SessionSchema = new Schema(
   {
@@ -14,8 +14,6 @@ const SessionSchema = new Schema(
   },
   { timestamps: true }
 );
-
-export type SessionDoc = InferSchemaType<typeof SessionSchema>;
 
 const Session = models.Session || model("Session", SessionSchema);
 export default Session;

@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const AcademicSessionSchema = new Schema(
   {
@@ -10,8 +10,6 @@ const AcademicSessionSchema = new Schema(
   },
   { timestamps: true }
 );
-
-export type AcademicSessionDoc = InferSchemaType<typeof AcademicSessionSchema>;
 
 const AcademicSession =
   models.AcademicSession || model("AcademicSession", AcademicSessionSchema);

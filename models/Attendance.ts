@@ -1,4 +1,4 @@
-import { Schema, model, models, type InferSchemaType } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const AttendanceSchema = new Schema(
   {
@@ -40,8 +40,6 @@ AttendanceSchema.index(
   { studentId: 1, classId: 1, subjectId: 1, date: 1 },
   { unique: true }
 );
-
-export type AttendanceDoc = InferSchemaType<typeof AttendanceSchema>;
 
 const Attendance = models.Attendance || model("Attendance", AttendanceSchema);
 export default Attendance;
